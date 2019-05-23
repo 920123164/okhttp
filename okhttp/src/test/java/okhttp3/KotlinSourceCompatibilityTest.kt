@@ -1122,9 +1122,9 @@ class KotlinSourceCompatibilityTest {
   @Test @Ignore
   fun route() {
     val route: Route = newRoute()
-    val address: Address = route.address()
-    val proxy: Proxy = route.proxy()
-    val inetSocketAddress: InetSocketAddress = route.socketAddress()
+    val address: Address = route.address
+    val proxy: Proxy = route.proxy
+    val inetSocketAddress: InetSocketAddress = route.socketAddress
     val requiresTunnel: Boolean = route.requiresTunnel()
   }
 
